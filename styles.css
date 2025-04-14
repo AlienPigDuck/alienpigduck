@@ -23,31 +23,28 @@
   font-style: italic;
 }
 
-/* Remove default link color and underline */
+/* Body Styles */
+body {
+    background-color: black; /* Set the background color to black */
+    color: white; /* Set the text color to white */
+    font-family: 'Anonymous Pro', monospace; /* Use Anonymous Pro font */
+    margin: 0; /* Remove default margin */
+    padding: 20px; /* Add padding */
+}
+
+/* Link Styles */
 a {
     color: inherit; /* Use the inherited color from the parent */
     text-decoration: none; /* Remove underline */
 }
 
-/* Add underline on hover */
 a:hover {
     text-decoration: underline; /* Underline on hover */
 }
 
-/* Optional: Remove color change on visited links */
 a:visited {
     color: inherit; /* Keep the color the same as the parent */
 }
-
-/* Top Bar Link Styles */
-.top-bar a {
-    margin-right: 20px; /* Space between links */
-}
-
-.top-bar a:last-child {
-    margin-right: 0; /* No margin for the last link */
-}
-/* Other styles above */
 
 /* Top Bar Styles */
 .top-bar {
@@ -56,7 +53,7 @@ a:visited {
     height: 100px; /* Height of the bar */
     background-color: black; /* Background color of the bar */
     color: white; /* Text color */
-    padding: 0 0px; /* Padding on the sides */
+    padding: 0; /* Padding on the sides */
 }
 
 .top-bar img {
@@ -64,17 +61,13 @@ a:visited {
     margin-right: 30px; /* Space between image and link */
 }
 
+/* Top Bar Link Styles */
 .top-bar a {
     color: white; /* Link color */
-    text-decoration: none; /* Remove underline */
     font-size: 20px; /* Font size for the link */
     margin-right: 20px; /* Space between links */
 }
 
 .top-bar a:last-child {
     margin-right: 0; /* No margin for the last link */
-}
-
-.top-bar a:hover {
-    text-decoration: underline; /* Underline on hover */
 }
