@@ -47,3 +47,34 @@ a:visited {
 .top-bar a:last-child {
     margin-right: 0; /* No margin for the last link */
 }
+/* Other styles above */
+
+/* Top Bar Styles */
+.top-bar {
+    display: flex;
+    align-items: center; /* Vertically center items */
+    height: 100px; /* Height of the bar */
+    background-color: black; /* Background color of the bar */
+    color: white; /* Text color */
+    padding: 0 0px; /* Padding on the sides */
+}
+
+.top-bar img {
+    height: 80px; /* Height of the small image */
+    margin-right: 30px; /* Space between image and link */
+}
+
+.top-bar a {
+    color: white; /* Link color */
+    text-decoration: none; /* Remove underline */
+    font-size: 20px; /* Font size for the link */
+    margin-right: 20px; /* Space between links */
+}
+
+.top-bar a:last-child {
+    margin-right: 0; /* No margin for the last link */
+}
+
+.top-bar a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
