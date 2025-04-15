@@ -41,7 +41,7 @@ a:visited {
 
 /* Body Styles */
 body {
-    background-color: black; /* Set the background color to black */
+    
     color: white; /* Set the text color to white */
     font-family: 'Anonymous Pro', monospace; /* Use Anonymous Pro font */
     margin: 0; /* Remove default margin */
@@ -49,8 +49,6 @@ body {
     position: relative; /* Establishes a positioning context */
     height: 100vh; /* Full height of the viewport */
     overflow: hidden; /* Prevent overflow */
-background-image: url('apd1_cool_sm.jpg');
-  background-repeat: no-repeat;
 }
 //* Background Image Styles */
 .background-image {
