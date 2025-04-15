@@ -1,3 +1,3 @@
 Yay, it worked.
 
-[Back home](/index.html)
+[Back home](index.html)
