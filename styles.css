@@ -56,7 +56,6 @@ a:visited {
 
 /* Body Styles */
 body {
-    background-color: black; /* Set the background color to black */
     color: white; /* Set the text color to white */
     font-family: 'Anonymous Pro', monospace; /* Use Anonymous Pro font */
     margin: 0; /* Remove default margin */
