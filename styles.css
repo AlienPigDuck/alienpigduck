@@ -48,6 +48,23 @@ body {
     padding: 20px; /* Add padding */
     position: relative; /* Establishes a positioning context */
     height: 100vh; /* Full height of the viewport */
+    overflow: hidden; /* Prevent overflow */
+
+}
+/* Background Image Styles */
+body::before {
+    content: ""; /* Required for pseudo-element */
+    position: absolute; /* Position it absolutely */
+    top: 0; /* Align to the top */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust for centering */
+    width: auto; /* Maintain original width */
+    height: auto; /* Maintain original height */
+    background-image: url('apd1_cool_sm.jpg'); /* Path to your background image */
+    background-size: contain; /* Maintain the original aspect ratio */
+    background-repeat: no-repeat; /* Prevent repeating the image */
+    opacity: 0.5; /* Dim the image (0 to 1 scale, 0.5 is 50% opacity) */
+    z-index: -1; /* Place it behind other content */
 }
 
 /* Top Bar Styles */
