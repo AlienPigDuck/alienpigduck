@@ -63,7 +63,7 @@ body::before {
     background-image: url("apd1_cool_sm.jpg"); /* Path to your background image */
     background-size: contain; /* Maintain the original aspect ratio */
     background-repeat: no-repeat; /* Prevent repeating the image */
-    opacity: 0.5; /* Dim the image (0 to 1 scale, 0.5 is 50% opacity) */
+    opacity: 0.9; /* Dim the image (0 to 1 scale, 0.5 is 50% opacity) */
     z-index: -1; /* Place it behind other content */
 }
 
