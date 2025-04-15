@@ -51,17 +51,17 @@ body {
 
 //* Background Image Styles */
 .background-image {
-    position: absolute; /* Position absolutely */
-    top: 50%; /* Move to vertical center */
-    left: 50%; /* Move to horizontal center */
-    transform: translate(-50%, -50%); /* Perfectly center the image */
-    width: auto; /* Maintain original width */
-    height: auto; /* Maintain original height */
-    background-image: url("apd1_cool_sm.jpg"); /* Path to your background image */
-    background-size: contain; /* Maintain the original aspect ratio */
-    background-repeat: no-repeat; /* Prevent repeating the image */
-    opacity: 0.5; /* Dim the image */
-    z-index: -1; /* Place behind other content */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.background-image img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
 }
 
 /* Top Bar Styles */
