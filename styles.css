@@ -63,7 +63,7 @@ body {
     background-size: contain; /* Maintain the original aspect ratio */
     background-repeat: no-repeat; /* Prevent repeating the image */
     opacity: 0.5; /* Dim the image */
-    z-index: -1; /* Place behind other content */
+    
 }
 
 /* Top Bar Styles */
