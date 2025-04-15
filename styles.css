@@ -1,5 +1,4 @@
-/* Anonymous Pro font styles */
-.anonymous-pro-regular {
+Ω.anonymous-pro-regular {
     font-family: "Anonymous Pro", monospace;
     font-weight: 400;
     font-style: normal;
@@ -34,7 +33,7 @@ a:hover {
     text-decoration: underline; /* Underline on hover */
 }
 
-/* Optional: Remove color change on visited links */
+/* Remove color change on visited links */
 a:visited {
     color: inherit; /* Keep the color the same as the parent */
 }
@@ -52,18 +51,17 @@ body {
 
 }
 /* Background Image Styles */
-body::before {
-    content: ""; /* Required for pseudo-element */
-    position: absolute; /* Position it absolutely */
+.background-image {
+    position: absolute; /* Positioning relative to the nearest positioned ancestor */
     top: 0; /* Align to the top */
     left: 50%; /* Center horizontally */
     transform: translateX(-50%); /* Adjust for centering */
     width: auto; /* Maintain original width */
     height: auto; /* Maintain original height */
-    background-image: url(https://www.alienpigduck.com/apd1_cool_sm.jpg); /* Path to your background image */
+    background-image: url("apd1_cool_sm.jpg"); /* Path to your background image */
     background-size: contain; /* Maintain the original aspect ratio */
     background-repeat: no-repeat; /* Prevent repeating the image */
-    opacity: 0.9; /* Dim the image (0 to 1 scale, 0.5 is 50% opacity) */
+    opacity: 0.5; /* Dim the image (0 to 1 scale, 0.5 is 50% opacity) */
     z-index: -1; /* Place it behind other content */
 }
 
