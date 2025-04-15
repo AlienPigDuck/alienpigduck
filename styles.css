@@ -60,7 +60,7 @@ body::before {
     transform: translateX(-50%); /* Adjust for centering */
     width: auto; /* Maintain original width */
     height: auto; /* Maintain original height */
-    background-image: url("apd1_cool_sm.jpg"); /* Path to your background image */
+    background-image: url(https://www.alienpigduck.com/apd1_cool_sm.jpg); /* Path to your background image */
     background-size: contain; /* Maintain the original aspect ratio */
     background-repeat: no-repeat; /* Prevent repeating the image */
     opacity: 0.9; /* Dim the image (0 to 1 scale, 0.5 is 50% opacity) */
