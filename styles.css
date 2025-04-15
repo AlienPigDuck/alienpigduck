@@ -49,8 +49,8 @@ body {
     position: relative; /* Establishes a positioning context */
     height: 100vh; /* Full height of the viewport */
     overflow: hidden; /* Prevent overflow */
-}
 
+}
 //* Background Image Styles */
 .background-image {
     position: absolute; /* Position absolutely */
