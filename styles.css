@@ -4,19 +4,16 @@
     font-weight: 400;
     font-style: normal;
 }
-
 .anonymous-pro-bold {
     font-family: "Anonymous Pro", monospace;
     font-weight: 700;
     font-style: normal;
 }
-
 .anonymous-pro-regular-italic {
     font-family: "Anonymous Pro", monospace;
     font-weight: 400;
     font-style: italic;
 }
-
 .anonymous-pro-bold-italic {
     font-family: "Anonymous Pro", monospace;
     font-weight: 700;
@@ -41,7 +38,7 @@ a:visited {
 
 /* Body Styles */
 body {
-    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    background-color: black; /* Set the background color to black */
     color: white; /* Set the text color to white */
     font-family: 'Anonymous Pro', monospace; /* Use Anonymous Pro font */
     margin: 0; /* Remove default margin */
