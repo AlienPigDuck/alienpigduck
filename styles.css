@@ -39,7 +39,7 @@ a:visited {
 /* Body Styles */
 body {
     background-color: black; /* Set the background color to black */
-    color: white; /* Set the text color to white */
+    color: whitesmoke; /* Set the text color to white */
     font-family: 'Anonymous Pro', monospace; /* Use Anonymous Pro font */
     margin: 0; /* Remove default margin */
     padding: 10px; /* Add padding */
@@ -53,8 +53,8 @@ body {
     display: flex;
     align-items: center; /* Vertically center items */
     height: 100px; /* Height of the bar */
-    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
-    color: white; /* Text color */
+    background-color: black;
+    color: whitesmoke; /* Text color */
     padding: 0; /* Padding on the sides */
     position: relative; /* Ensure it's above the background */
     z-index: 1; /* Ensure it's above the background image */
@@ -66,7 +66,7 @@ body {
 
 /* Top Bar Link Styles */
 .top-bar a {
-    color: white; /* Link color */
+    color: whitesmoke; /* Link color */
     text-decoration: none; /* Remove underline */
     font-size: 20px; /* Font size for the link */
     margin-right: 20px; /* Space between links */
