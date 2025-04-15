@@ -39,6 +39,18 @@ a:visited {
     color: inherit; /* Keep the color the same as the parent */
 }
 
+/* Body Styles */
+body {
+    background-color: black; /* Set the background color to black */
+    color: white; /* Set the text color to white */
+    font-family: 'Anonymous Pro', monospace; /* Use Anonymous Pro font */
+    margin: 0; /* Remove default margin */
+    padding: 20px; /* Add padding */
+    position: relative; /* Establishes a positioning context */
+    height: 100vh; /* Full height of the viewport */
+    overflow: hidden; /* Prevent overflow */
+}
+
 //* Background Image Styles */
 .background-image {
     position: absolute; /* Position absolutely */
@@ -52,17 +64,6 @@ a:visited {
     background-repeat: no-repeat; /* Prevent repeating the image */
     opacity: 0.5; /* Dim the image */
     z-index: -1; /* Place behind other content */
-}
-
-/* Body Styles */
-body {
-    color: white; /* Set the text color to white */
-    font-family: 'Anonymous Pro', monospace; /* Use Anonymous Pro font */
-    margin: 0; /* Remove default margin */
-    padding: 20px; /* Add padding */
-    position: relative; /* Establishes a positioning context */
-    height: 100vh; /* Full height of the viewport */
-    overflow: hidden; /* Prevent overflow */
 }
 
 /* Top Bar Styles */
