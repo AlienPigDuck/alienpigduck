@@ -1,3 +1,18 @@
+//* Background Image Styles */
+.background-image {
+    position: absolute; /* Position absolutely */
+    top: 50%; /* Move to vertical center */
+    left: 50%; /* Move to horizontal center */
+    transform: translate(-50%, -50%); /* Perfectly center the image */
+    width: auto; /* Maintain original width */
+    height: auto; /* Maintain original height */
+    background-image: url("apd1_cool_sm.jpg"); /* Path to your background image */
+    background-size: contain; /* Maintain the original aspect ratio */
+    background-repeat: no-repeat; /* Prevent repeating the image */
+    opacity: 0.5; /* Dim the image */
+    z-index: -1; /* Place behind other content */
+}
+
 /* Anonymous Pro font styles */
 .anonymous-pro-regular {
     font-family: "Anonymous Pro", monospace;
@@ -50,20 +65,6 @@ body {
     height: 100vh; /* Full height of the viewport */
     overflow: hidden; /* Prevent overflow */
 
-}
-//* Background Image Styles */
-.background-image {
-    position: absolute; /* Position absolutely */
-    top: 50%; /* Move to vertical center */
-    left: 50%; /* Move to horizontal center */
-    transform: translate(-50%, -50%); /* Perfectly center the image */
-    width: auto; /* Maintain original width */
-    height: auto; /* Maintain original height */
-    background-image: url("apd1_cool_sm.jpg"); /* Path to your background image */
-    background-size: contain; /* Maintain the original aspect ratio */
-    background-repeat: no-repeat; /* Prevent repeating the image */
-    opacity: 0.5; /* Dim the image */
-    
 }
 
 /* Top Bar Styles */
