@@ -49,7 +49,8 @@ body {
     position: relative; /* Establishes a positioning context */
     height: 100vh; /* Full height of the viewport */
     overflow: hidden; /* Prevent overflow */
-
+background-image: url('apd1_cool_sm.jpg');
+  background-repeat: no-repeat;
 }
 //* Background Image Styles */
 .background-image {
