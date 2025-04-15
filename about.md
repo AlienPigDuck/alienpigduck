@@ -1,3 +1,3 @@
 Yay, it worked.
 
-<a href="https://www.alienpigduck.com">Back to alienpigduck</a>
+[Back to alienpigduck](https://www.alienpigduck.com)
