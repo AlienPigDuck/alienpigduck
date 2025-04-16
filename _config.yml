@@ -19,18 +19,16 @@
 # in the templates via {{ site.myvariable }}.
 
 title: AlienPigDuck
-email: 
-description: >- An Alien, a pig, and a duck walk into a bar
+description: An Alien, a pig, and a duck walk into a bar
 baseurl: "" # the subpath of your site, e.g. /blog
-domain: alienpigduck.com
 url: https://www.alienpigduck.com
 twitter_username:  
 github_username:  alienpigduck
 
 # Build settings
-theme: minima
+remote_theme: pages-themes/minimal@v0.2.0
 plugins:
-  - jekyll-feed
+- jekyll-remote-theme
 
 # Exclude from processing.
 # The following items will not be processed, by default.
