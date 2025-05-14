@@ -48,14 +48,6 @@ body {
     overflow: hidden; /* Prevent overflow */
 }
 
-.container {
-    width: 100%; /* Adjust width as needed */
-    max-width: 600px; /* Optional: set a maximum width */
-    word-wrap: break-word; /* For older browsers */
-    overflow-wrap: break-word; /* Modern browsers */
-    white-space: normal; /* Default behavior for wrapping text */
-}
-
 /* Top Bar Styles */
 .top-bar {
     display: flex;
