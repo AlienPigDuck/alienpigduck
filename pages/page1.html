@@ -47,31 +47,32 @@ The goal was to be able to create blog posts in Obsidian and upload to github, m
 
 Process Overview
 File Format Conversion: Obsidian generates Markdown (.md) files, but I need HTML files for my website. This is where Hazel comes in.
-Hazel Setup:
-▪ Hazel monitors specific folders in my Obsidian vault.
-▪ When a new .md file is detected, Hazel copies it to my local repository and converts it to an HTML file.
-▪ I then use push these files to my website hosted on GitHub.
+
+Hazel
+Hazel monitors specific folders in my Obsidian vault.
+When a new .md file is detected, Hazel copies it to my local repository and converts it to an HTML file.
+I then use push these files to my website hosted on GitHub.
 
 Folder Structure in Obsidian
-• GIT Folder: Contains two sub-folders:
-Pages: For individual blog posts (e.g. www.alienpigduck.com/pages/page1.html).
-Parent: For the parent/index page with links to each child post (e.g., www.alienpigduck.com/pages.html).
+GIT Folder: Contains two sub-folders:
+1) Pages: For individual blog posts (e.g. www.alienpigduck.com/pages/page1.html).
+2) Parent: For the parent/index page with links to each child post (e.g., www.alienpigduck.com/pages.html).
 
 Creating a New Blog Post
-I create the page notes with templater plugin using a template which includes the html code, so each new post maintains the same style.
-Rename it from "untitled" to "page1" (whatever you want the page to be called) and place it in the Pages folder.
-Update the parent/index page to include a link to the new "page1".
-Hazel detects the new page1.md and the updated parent page (page.md),  moves them to my local repository and concerts to html.
+▪ I create the page notes with templater plugin using a template which includes the html code, so each new post maintains the same style.
+▪ Rename it from "untitled" to "page1" (whatever you want the page to be called) and place it in the Pages folder.
+▪ Update the parent/index page to include a link to the new "page1".
+▪ Hazel detects the new page1.md and the updated parent page (page.md),  moves them to my local repository and concerts to html.
 
 Hazel Rules
 For Individual Pages:
-• Hazel moves page1.md to LOCAL_REPO/pages folder and converts it to page1.html.
+▪ Hazel moves page1.md to LOCAL_REPO/pages folder and converts it to page1.html.
 For Parent/Index Page:
-• Hazel sends page.md to a temporary folder (temp).
-• Once in temp, Hazel converts it to page.html and moves it to the root of LOCAL_REPO.
+▪ Hazel sends page.md to a temporary folder (temp).
+▪ Once in temp, Hazel converts it to page.html and moves it to the root of LOCAL_REPO.
 
 Final Steps
-Use your preferred method of pushing files to GitHub, such as terminal commands or the GitHub desktop app.  I made an Alfred workflow with a hotkey that pushes the new files to github.  And that's it!
+▪ Use your preferred method of pushing files to GitHub, such as terminal commands or the GitHub desktop app.  I made an Alfred workflow with a hotkey that pushes the new files to github.  And that's it!
 
 Additional Notes
 Rather than try to explain the rules for Hazel, I've attached screenshots on my <a href="https://www.alienduckpig.com/obsidianhazelalfredgithub">blog post</a>. The folders on the left, Pages and Parent, are inside my Obsidian vault GIT folder as described above.  The temp folder can be placed wherever you like (the parent file just does a stop-over here to be converted to html, from where it gets moved to your local repo)
