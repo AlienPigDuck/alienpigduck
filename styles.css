@@ -45,7 +45,7 @@ body {
     padding: 10px; /* Add padding */
     position: relative; /* Establishes a positioning context */
     height: 100vh; /* Full height of the viewport */
-    overflow: hidden; /* Prevent overflow */
+    overflow: auto; /* Allow scrolling when content overflows */
 }
 
 /* Top Bar Styles */
@@ -86,4 +86,6 @@ pre {
     white-space: pre-wrap; /* Preserve whitespace and allow wrapping */
     margin-top: 1em; /* Maintain margin */
     margin-right: 0px; /* Maintain margin */
+    max-height: calc(100vh - 120px); /* Adjust height to allow for top bar */
+    overflow: auto; /* Enable scrolling for long content */
 }
