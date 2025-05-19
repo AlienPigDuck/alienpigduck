@@ -100,25 +100,52 @@
     const animal = document.getElementById("cowsay-animal").value;
 
     const eye = eyes[mood] || "oo";
+    const eyeLeft = eye[0];
+    const eyeRight = eye[1];
+
     const bubbleTop = ` ${"_".repeat(text.length + 2)}`;
     const bubble = `< ${text} >`;
     const bubbleBottom = ` ${"-".repeat(text.length + 2)}`;
 
-    let art = animals[animal];
-
-    if (animal === "cow") {
-      art = `        \\   ^__^
+    const animals = {
+      cow: `        \\   ^__^
          \\  (${eye})\\_______
             (__)\\       )\\/\\
                 ||----w |
-                ||     ||`;
-    }
+                ||     ||`,
+
+      tux: `        \\   
+         \\  
+          .--.
+         |${eyeLeft}_${eyeRight} |
+         |:_/ |
+        //   \\\\
+       (|     | )
+      /'\\_   _/\\\`
+      \\___)=(___/`,
+
+      moose: `        \\   
+         \\\\    (${eye})
+          (__)  ||\\\\
+               || ||`,
+
+      cat: `        \\  
+         \\  
+        |\\___/|
+        (${eye})  |
+        (  =^= )  |
+        (        ) 
+        (         )
+        (          )
+         \\_______/`
+    };
+
+    const art = animals[animal] || animals.cow;
 
     document.getElementById("cowsay-output").textContent =
       `${bubbleTop}\n${bubble}\n${bubbleBottom}\n${art}`;
   }
 
-  // Initialize with a default cow
   window.onload = updateCow;
 </script>
 
