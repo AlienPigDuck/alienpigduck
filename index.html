@@ -35,6 +35,42 @@ An alien, a pig, and a duck walk into a bar
                    ||----w |                 
                    ||     ||                 
     <br>
+      <!-- COWSAY GENERATOR -->
+    <section id="cowsay-generator">
+        <h2>Cowsay Generator</h2>
+        <label for="cowsay-input">What should the cow say?</label><br>
+        <textarea id="cowsay-input" rows="3" cols="50" placeholder="Type something..."></textarea><br>
+        <button onclick="updateCow()">Make it Moo</button>
+        <pre id="cowsay-output">
+ ______________________
+< I'm just standing here >
+ ----------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+        </pre>
+    </section>
+
+    <script>
+        function updateCow() {
+            const text = document.getElementById("cowsay-input").value || "Moo?";
+            const border = "_".repeat(text.length + 4);
+            const top = ` ${border} `;
+            const middle = `< ${text} >`;
+            const bottom = ` ${"-".repeat(text.length + 4)} `;
+            const cow = `
+        \\   ^__^
+         \\  (oo)\\_______
+            (__)\\       )\\/\\
+                ||----w |
+                ||     ||`;
+            document.getElementById("cowsay-output").textContent =
+                `${top}\n${middle}\n${bottom}\n${cow}`;
+        }
+    </script>
+
     <BR>
   <h1>Boy Meets Girl</h1>
     <audio controls>
