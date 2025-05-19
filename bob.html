@@ -1,49 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Bob's page on AlienPigDuck.com" />
-  <title>Bob - AlienPigDuck</title>
-  <link rel="stylesheet" href="bob.css" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to AlienPigDuck</title>
+    
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Link to Anonymous Pro font -->
+    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="bob.css"> <!-- Link to your CSS file -->
 </head>
 <body>
-  <header>
-    <img src="logo.png" alt="Alien Pig Duck Logo" class="logo" />
-    <h1>Bob's Corner</h1>
-  </header>
+    <div class="top-bar">
+        <a href="index.html">
+            <img src="apd1_cool_sm.jpg" alt="Logo"> <!-- Logo icon as a link -->
+        </a>
+        <a href="#" class="home-link">Home</a> 
+        <a href="about.html">About</a>
+        <a href="pages.html">Pages</a> 
+    </div>
+    
+    <pre>
+-------------------------------------------
+An alien, a pig, and a duck walk into a bar
+-------------------------------------------
+           \   ^__^          
+            \  (oo)\_______             
+               (__)\       )\/\                 
+                   ||----w |                 
+                   ||     ||                 
+<br>
+This is text <br>
+<a href="about.html" target="_blank">This opens a link in a new tab</a><br>
+<a href="about.html">This opens a link in the same window</a><br>
+    </pre>
 
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="pages.html">Pages</a></li>
-      <li><a href="bob.html" aria-current="page">Bob</a></li>
-    </ul>
-  </nav>
+    <br>
+    <h1>Boy Meets Girl</h1>
+    <audio controls>
+        <source src="bmg.wav" type="audio/wav">
+        Your browser does not support the audio element.
+    </audio>
 
-  <main>
-    <section>
-      <h2>Welcome to Bob's Page</h2>
-      <p>This is where Bob shares his thoughts and insults.</p>
-    </section>
-
-    <section class="ascii-art">
-<pre>
- ____________________________
-< I'm BOB, and you're not.   >
- ----------------------------
+    <!-- COWSAY GENERATOR -->
+    <section id="cowsay-generator">
+        <h2>Cowsay Generator</h2>
+        <label for="cowsay-input">What should the cow say?</label><br>
+        <textarea id="cowsay-input" rows="3" cols="50" placeholder="Type something..."></textarea><br>
+        <button onclick="updateCow()">Make it Moo</button>
+        <pre id="cowsay-output">
+ ______________________
+< I'm just standing here >
+ ----------------------
         \   ^__^
          \  (oo)\_______
             (__)\       )\/\
                 ||----w |
                 ||     ||
-</pre>
+        </pre>
     </section>
-  </main>
 
-  <footer>
-    <p>&copy; 2025 AlienPigDuck. All rights reserved.</p>
-  </footer>
+    <script>
+        function updateCow() {
+            const text = document.getElementById("cowsay-input").value || "Moo?";
+            const border = "_".repeat(text.length + 4);
+            const top = ` ${border} `;
+            const middle = `< ${text} >`;
+            const bottom = ` ${"-".repeat(text.length + 4)} `;
+            const cow = `
+        \\   ^__^
+         \\  (oo)\\_______
+            (__)\\       )\\/\\
+                ||----w |
+                ||     ||`;
+            document.getElementById("cowsay-output").textContent =
+                `${top}\n${middle}\n${bottom}\n${cow}`;
+        }
+    </script>
 </body>
 </html>
