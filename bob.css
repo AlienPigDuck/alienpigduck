@@ -130,7 +130,9 @@ pre {
     color: #0f0;
     padding: 10px;
     border-radius: 5px;
-    white-space: pre;
+    white-space: pre !important;
     overflow-x: auto;
-    font-family: 'Anonymous Pro', monospace;
+    font-family: 'Anonymous Pro', monospace, 'Courier New', Courier;
+    word-break: normal;
+    overflow-wrap: normal;
 }
