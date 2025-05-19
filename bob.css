@@ -115,12 +115,22 @@ pre {
     margin-top: 10px;
 }
 
+#cowsay-generator select {
+    background-color: #111;
+    color: #0f0;
+    border: 1px solid #444;
+    font-family: 'Anonymous Pro', monospace;
+    padding: 5px;
+    margin: 10px 5px;
+}
+
 #cowsay-output {
     margin-top: 20px;
     background-color: #111;
     color: #0f0;
     padding: 10px;
     border-radius: 5px;
-    white-space: pre; /* ← prevents wrapping */
-    overflow-x: auto; /* ← adds horizontal scroll if needed */
+    white-space: pre;
+    overflow-x: auto;
+    font-family: 'Anonymous Pro', monospace;
 }
