@@ -121,5 +121,6 @@ pre {
     color: #0f0;
     padding: 10px;
     border-radius: 5px;
-    white-space: pre-wrap;
+    white-space: pre; /* ← prevents wrapping */
+    overflow-x: auto; /* ← adds horizontal scroll if needed */
 }
